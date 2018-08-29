@@ -27,9 +27,9 @@ The goal of this Sprint Challenge is to create a custom `UIControl`. The control
 The requirements for this project are as follows:
 
 1. Your view controller should have:
-  - A navigation bar.
-  - A bar button item in the navigation bar that will reset the lock.
-  - A view for your lock control.
+    - A navigation bar.
+    - A bar button item in the navigation bar that will reset the lock.
+    - A view for your lock control.
 2. Apply a theme for your application using `UIAppearance. This should change the look of at least the navigation bar and the bar button item.
 3. Implement the lock custom `UIControl`. The control should:
     - Show an image indicating whether it is locked or unlocked. You will find the images in the assets folder.
