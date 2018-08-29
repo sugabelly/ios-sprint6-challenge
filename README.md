@@ -34,5 +34,6 @@ The requirements for this project are as follows:
 3. Implement the lock custom `UIControl`. The control should:
     - Show an image indicating whether it is locked or unlocked. You will find the images in the assets folder.
     - Move according to the movement of the touch if it's touching the thumb view (the black circle in the screen recording). See the screen recording for how the view should move.
-    - Upon ending the touch, the thumb view should go back to the starting position if it's below 80% of the way down the track, or unlock if it's past 80% of the track. Change the lock's image to the `unlocked` image from the assets folder.
-    - Once unlocked, user interaction should be disabled. Create a `reset` method that will "lock" the control by putting the thumb view back to its starting position and resetting the image back to the locked image.
+    - Upon ending the touch, the thumb view should animate by springing back to the starting position if it's below 80% of the way down the track, or unlock if it's past 80% of the track. Change the lock's image to the `unlocked` image from the assets folder.
+    - Once unlocked, user interaction should be disabled. Create a `reset` method that will "lock" the control by putting the thumb view back to its starting position and resetting the image back to the locked image. 
+    - The reset button should appear when the button is unlocked, and disappear when the reset button is tapped. This should be animated.
