@@ -30,7 +30,7 @@ The requirements for this project are as follows:
     - A navigation bar.
     - A bar button item in the navigation bar that will reset the lock.
     - A view for your lock control.
-2. Apply a theme for your application using `UIAppearance. This should change the look of at least the navigation bar and the bar button item.
+2. Apply a theme for your application using `UIAppearance`. This should change the look of at least the navigation bar and the bar button item.
 3. Implement the lock custom `UIControl`. The control should:
     - Show an image indicating whether it is locked or unlocked. You will find the images in the assets folder.
     - Move according to the movement of the touch if it's touching the thumb view (the black circle in the screen recording). See the screen recording for how the view should move.
