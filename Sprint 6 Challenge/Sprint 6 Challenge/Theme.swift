@@ -12,30 +12,20 @@ import UIKit
 enum Theme {
     
     //#476A6F
-    static let deepSpaceSparkle = UIColor(red:0.28, green:0.42, blue:0.44, alpha:1.0)
+    static let mikadoYellow = UIColor(red: 249/255, green: 188/255, blue: 19/255, alpha: 1.0)
     
-    //#519E8A
-    static let polishedPine = UIColor(red:0.32, green:0.62, blue:0.54, alpha:1.0)
+    // #88498F
+    static let plum = UIColor(red: 136/255, green: 73/255, blue: 143/255, alpha: 1.0)
     
-    //#7EB09B
-    static let greenSheen = UIColor(red:0.49, green:0.69, blue:0.61, alpha:1.0)
+    // #95639B
     
-    //#C5C9A4
-    static let darkVanilla = UIColor(red:0.77, green:0.79, blue:0.64, alpha:1.0)
-    
-    //#ECBEB4
-    static let desertSand = UIColor(red:0.93, green:0.75, blue:0.71, alpha:1.0)
-    
-    
+    static let pompAndPowder = UIColor(red: 149/255, green: 99/255, blue: 155/255, alpha: 1.0)
     
     static func generalAppearance() {
-        UINavigationBar.appearance().barTintColor = deepSpaceSparkle
-        UINavigationBar.appearance().backgroundColor = darkVanilla
-        UINavigationBar.appearance().tintColor = greenSheen
+        UINavigationBar.appearance().barTintColor = pompAndPowder
         
-        let navBarText = [NSAttributedStringKey.foregroundColor: desertSand]
+        let navBarText = [NSAttributedStringKey.foregroundColor: UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = navBarText
-        
     }
     
 }

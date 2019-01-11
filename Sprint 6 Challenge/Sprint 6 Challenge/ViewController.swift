@@ -26,13 +26,15 @@ class ViewController: UIViewController {
     func specificAppearance() {
         
         //Invisible Reset Button
-        resetButton.tintColor = UIColor.clear
+        resetButton.tintColor = Theme.pompAndPowder
         resetButton.isEnabled = false
         
         //View Appearance
         bgView.layer.cornerRadius = 20
         bgView.clipsToBounds = true
-        bgView.backgroundColor = UIColor(red: 249/255, green: 188/255, blue: 19/255, alpha: 1.0) // Mikado Yellow #F9BC13
+        bgView.backgroundColor = Theme.mikadoYellow
+        self.view.backgroundColor = Theme.pompAndPowder
+
         
         //Slider Appearance
         slider.minimumValue = 0
@@ -66,7 +68,7 @@ class ViewController: UIViewController {
            animateUnlock(imageView: padlockView, images: animationArray)
             slider.isUserInteractionEnabled = false
             resetButton.isEnabled = true
-            //resetButton.tintColor = UIColor(
+            resetButton.tintColor = Theme.mikadoYellow
         }
     }
     
