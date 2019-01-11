@@ -36,22 +36,16 @@ class ViewController: UIViewController {
         slider.minimumTrackTintColor = UIColor.gray
         slider.maximumTrackTintColor = UIColor.gray
         slider.thumbTintColor = UIColor.black
-        slider.isContinuous = true //Value changes instantly as thumb is moved
+        slider.isContinuous = true //Value won't change until thumb is done moving
     }
-    
-    
-    
-    //slider.addTarget(self, action: #selector(sliderMoved(sender:)), for: UIControlEvents.valueChanged) //Makes slider target function below.
     
 //
     
-    let lockedImage = UIImage(named: "Locked")!
     let unlockedImage = UIImage(named: "Unlocked")!
     var animationArray: [UIImage] = []
 
     
     func createArray() {
-        animationArray.append(lockedImage)
         animationArray.append(unlockedImage)
     }
     
@@ -59,7 +53,6 @@ class ViewController: UIViewController {
         createArray()
         imageView.animationImages = images
         imageView.animationDuration = 1.0
-        //imageView.animationRepeatCount = 1
         imageView.startAnimating()
     }
     
@@ -67,13 +60,22 @@ class ViewController: UIViewController {
         
         if slider.value > 80.0 {
            animateUnlock(imageView: padlockView, images: animationArray)
+            slider.isUserInteractionEnabled = false
         }
     }
     
     @IBAction func pressToReset(_ sender: UIBarButtonItem) {
         
         slider.value = 0
+        slider.isUserInteractionEnabled = true
         padlockView.stopAnimating()
+        
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if slider.value < 80.0 {
+            slider.value = 0
+        }
     }
     
     
