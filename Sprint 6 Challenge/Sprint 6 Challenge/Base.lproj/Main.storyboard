@@ -26,25 +26,39 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NkL-sx-NDa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkL-sx-NDa">
                                 <rect key="frame" x="47" y="140" width="280" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Locked" translatesAutoresizingMaskIntoConstraints="NO" id="l55-ec-L3t">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Locked" translatesAutoresizingMaskIntoConstraints="NO" id="l55-ec-L3t">
                                         <rect key="frame" x="50" y="22" width="180" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="l55-ec-L3t" secondAttribute="height" multiplier="1:1" id="2Jz-CJ-LcZ"/>
+                                            <constraint firstAttribute="width" constant="180" id="aiS-1T-yod"/>
+                                        </constraints>
                                     </imageView>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NEr-Wb-anJ">
-                                        <rect key="frame" x="18" y="230" width="244" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NEr-Wb-anJ" customClass="SpecialSlider" customModule="Sprint_6_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="230" width="244" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="yY7-Be-Tdd"/>
+                                        </constraints>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NEr-Wb-anJ" firstAttribute="centerX" secondItem="NkL-sx-NDa" secondAttribute="centerX" id="1Qe-BS-MCi"/>
+                                    <constraint firstItem="l55-ec-L3t" firstAttribute="top" secondItem="NkL-sx-NDa" secondAttribute="top" constant="22" id="GKi-nT-lTq"/>
+                                    <constraint firstAttribute="height" constant="280" id="iCy-QD-nW5"/>
+                                    <constraint firstItem="l55-ec-L3t" firstAttribute="centerX" secondItem="NkL-sx-NDa" secondAttribute="centerX" id="qpP-rV-XAr"/>
+                                    <constraint firstItem="NEr-Wb-anJ" firstAttribute="top" secondItem="l55-ec-L3t" secondAttribute="bottom" constant="28" id="zaH-va-IfL"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NkL-sx-NDa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Che-Ih-9rf"/>
+                            <constraint firstItem="NkL-sx-NDa" firstAttribute="top" secondItem="3Ku-sa-hcV" secondAttribute="bottom" constant="76" id="Cv5-PJ-9PS"/>
                             <constraint firstItem="3Ku-sa-hcV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P4n-Dr-YCg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NkL-sx-NDa" secondAttribute="trailing" constant="48" id="SlQ-ML-dmx"/>
                             <constraint firstItem="3Ku-sa-hcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qLf-xz-Z6W"/>
                             <constraint firstItem="3Ku-sa-hcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yJQ-iB-GQ1"/>
                         </constraints>
