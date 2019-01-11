@@ -27,7 +27,8 @@ class ViewController: UIViewController {
         
         //Invisible Reset Button
         resetButton.tintColor = Theme.pompAndPowder
-        resetButton.isEnabled = false
+        resetButton.tintColor?.withAlphaComponent(0.0)
+        //resetButton.isEnabled = false
         
         //View Appearance
         bgView.layer.cornerRadius = 20
@@ -78,6 +79,8 @@ class ViewController: UIViewController {
         slider.isUserInteractionEnabled = true
         padlockView.stopAnimating()
         resetButton.isEnabled = false
+        resetButton.tintColor = Theme.pompAndPowder
+        resetButton.tintColor?.withAlphaComponent(0.0)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
