@@ -16,4 +16,5 @@ class SpecialSlider: UISlider {
         super.trackRect(forBounds: customBounds)
         return customBounds
     }
+    
 }

@@ -41,6 +41,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="yY7-Be-Tdd"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="slideToUnlock:" destination="BYZ-38-t0r" eventType="valueChanged" id="wqB-mt-f1t"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,6 +71,7 @@
                         <outlet property="bgView" destination="NkL-sx-NDa" id="lxf-8f-FLx"/>
                         <outlet property="padlockView" destination="l55-ec-L3t" id="8zz-fV-xMf"/>
                         <outlet property="resetButton" destination="XDQ-yc-g9G" id="7h7-9T-doL"/>
+                        <outlet property="slider" destination="NEr-Wb-anJ" id="B3g-8C-w8P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
