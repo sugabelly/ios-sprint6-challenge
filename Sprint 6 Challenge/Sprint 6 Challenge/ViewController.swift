@@ -70,6 +70,11 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func pressToReset(_ sender: UIBarButtonItem) {
+        
+        slider.value = 0
+        padlockView.stopAnimating()
+    }
     
     
     
