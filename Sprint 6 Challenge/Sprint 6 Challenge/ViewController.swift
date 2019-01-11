@@ -25,6 +25,10 @@ class ViewController: UIViewController {
  //
     func specificAppearance() {
         
+        //Invisible Reset Button
+        resetButton.tintColor = UIColor.clear
+        resetButton.isEnabled = false
+        
         //View Appearance
         bgView.layer.cornerRadius = 20
         bgView.clipsToBounds = true
@@ -61,6 +65,8 @@ class ViewController: UIViewController {
         if slider.value > 80.0 {
            animateUnlock(imageView: padlockView, images: animationArray)
             slider.isUserInteractionEnabled = false
+            resetButton.isEnabled = true
+            //resetButton.tintColor = UIColor(
         }
     }
     
@@ -69,7 +75,7 @@ class ViewController: UIViewController {
         slider.value = 0
         slider.isUserInteractionEnabled = true
         padlockView.stopAnimating()
-        
+        resetButton.isEnabled = false
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
