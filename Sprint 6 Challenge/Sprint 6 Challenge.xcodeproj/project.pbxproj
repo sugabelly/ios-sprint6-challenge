@@ -14,6 +14,8 @@
 		468B89EB2137397500E7FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468B89E92137397500E7FF73 /* LaunchScreen.storyboard */; };
 		4C0E9C1021E90A97006CA414 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E9C0F21E90A96006CA414 /* Slider.swift */; };
 		4C0E9C1221E917C4006CA414 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0E9C1121E917C4006CA414 /* Theme.swift */; };
+		4CEEF8D321ED523C00017A25 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEF8D221ED523C00017A25 /* Calculations.swift */; };
+		4CEEF8D521ED525400017A25 /* SliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEEF8D421ED525400017A25 /* SliderController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		468B89EC2137397500E7FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0E9C0F21E90A96006CA414 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		4C0E9C1121E917C4006CA414 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4CEEF8D221ED523C00017A25 /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		4CEEF8D421ED525400017A25 /* SliderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				468B89E22137397400E7FF73 /* ViewController.swift */,
 				4C0E9C1121E917C4006CA414 /* Theme.swift */,
 				4C0E9C0F21E90A96006CA414 /* Slider.swift */,
+				4CEEF8D221ED523C00017A25 /* Calculations.swift */,
+				4CEEF8D421ED525400017A25 /* SliderController.swift */,
 				468B89E42137397400E7FF73 /* Main.storyboard */,
 				468B89E72137397500E7FF73 /* Assets.xcassets */,
 				468B89E92137397500E7FF73 /* LaunchScreen.storyboard */,
@@ -144,6 +150,8 @@
 				468B89E32137397400E7FF73 /* ViewController.swift in Sources */,
 				4C0E9C1221E917C4006CA414 /* Theme.swift in Sources */,
 				4C0E9C1021E90A97006CA414 /* Slider.swift in Sources */,
+				4CEEF8D321ED523C00017A25 /* Calculations.swift in Sources */,
+				4CEEF8D521ED525400017A25 /* SliderController.swift in Sources */,
 				468B89E12137397400E7FF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
